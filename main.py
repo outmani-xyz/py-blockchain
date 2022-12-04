@@ -13,6 +13,11 @@ class Person:
 
     
 p  = Person()
-p.age(name='ham')
+name = input('Yyour name: ')
+if name =='':
+    print('You didnt enter anything')
+else:
 
-print(p._name,p._age)
+    p.age(name)
+    print(p._name,p._age)
+
